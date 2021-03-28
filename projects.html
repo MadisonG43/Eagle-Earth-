@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&display=swap" rel="stylesheet">
+  <head>
+  <div class="topnav">
+    <a href=index.html>Home</a> 
+    <a href=projects.html>Projects</a>
+    <a href=members.html>Members</a>
+    <a href=garden.html>Garden Shed</a>
+  </div>
+
+  
+  <link rel="stylesheet" href="styles.css">
+  
+ </head>
+
+<body style="height:2000px;">
+  
+  <h2 style="text-align:center; text-shadow: 2px 2px 4px white;"> Eagle Earth Projects </h2>
+
+<p>Hydroponics</p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="https://i.postimg.cc/L4qHkn23/IMG-8066.jpg" style="width:100%;"> 
+    <div class="text">hugabugabuga</div>
+  </div>
+
+  <div class="mySlides1">
+    <img src="https://i.postimg.cc/6q1d5qb2/IMG-7960.jpg" style="width:100%;">
+     <div class="text">hababada</div>
+  </div>
+
+  <div class="mySlides1">
+    <img src="https://i.postimg.cc/QMvxH6gC/IMG-8068.jpg" style="width:100%">
+     <div class="text">dadabadabadadaba</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<p>Aquaponics</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="https://i.postimg.cc/G3MPjg3L/IMG-7961.jpg" style="width:100%">
+     <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides2">
+    <img src="https://i.postimg.cc/vBY9rfpx/IMG-7973.jpg" style="width:100%">
+     <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides2">
+    <img src="https://i.postimg.cc/mkhHqRZb/IMG-7974.jpg" style="width:100%">
+     <div class="text">Caption Text</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+  
+  <p>Old Style Farming</p>
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="https://i.postimg.cc/pLXrzpmF/IMG-E8095.jpg" style="width:100%">
+     <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides3">
+    <img src="https://i.postimg.cc/vBWMDGH2/IMG-8071.jpg" style="width:100%">
+     <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides3">
+    <img src="https://i.postimg.cc/Fz3dW8vk/IMG-E8097.jpg" style="width:100%">
+     <div class="text">Caption Text</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+  
+  <style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+  
+  .text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+</style>
+
+
+<script>
+var slideIndex = [1,2];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2)
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 2) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+ 
+
+
+</body>
+<footer>
+    <h6>EagleEarth™</h6>
+</footer>
+  
+</html> 
+</body>
